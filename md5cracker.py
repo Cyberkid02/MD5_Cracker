@@ -16,7 +16,7 @@ def md5crack(hash_file, wordlists):
         crack = crack.replace('\n', (""))
 
         try:
-            wordlistfile = open(wordlists, 'r')
+            wordlistfile = open(wordlists, 'r', encoding='latin1')
         except IOError:
             print("Wordlist file not found!")
             sys.exit()
