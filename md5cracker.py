@@ -13,7 +13,7 @@ def md5crack(hash_file, wordlists):
         print("Hash file not Found!")
         sys.exit()
     else:
-        crack = hashdocument.readlines() # readlines() instead of readline() // will return a list
+        crack = hashdocument.readlines()
         
         print(f'\n[*] cracking {len(crack)} hashe(s)')
 
